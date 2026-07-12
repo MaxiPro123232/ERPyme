@@ -1,0 +1,114 @@
+Índice de imágenes y descripciones
+
+01_1_login.png
+1. Login
+Permite iniciar sesión con usuario y contraseña válidos para acceder a las funciones habilitadas según el perfil del usuario.
+
+02_2_mi_perfil.png
+2. Mi Perfil
+Permite consultar los datos personales del usuario, su estado, los grupos a los que pertenece y los permisos que posee.
+
+03_3_cerrar_sesion.png
+3. Cerrar Sesión
+Permite finalizar la sesión actual de forma segura para impedir el acceso al sistema hasta un nuevo inicio de sesión.
+
+04_4_cambiar_clave.png
+4. Cambiar Clave
+Permite modificar la contraseña ingresando la clave actual, la nueva clave y su confirmación.
+
+05_5_recuperar_clave.png
+5. Recuperar Clave
+Permite recuperar el acceso al sistema ingresando el usuario y el e-mail registrado.
+
+06_6_gestion_de_usuarios_listado.png
+6. Gestión de Usuarios (Listado)
+Permite listar, buscar, filtrar y administrar los usuarios existentes en el sistema.
+
+07_7_formulario_usuario_alta_modificacion.png
+7. Formulario Usuario (Alta/Modificación)
+Permite registrar o modificar usuarios, definir su estado y asignarles grupos de pertenencia.
+
+08_8_gestion_de_grupos_listado.png
+8. Gestión de Grupos (Listado)
+Permite listar, buscar, filtrar y administrar los grupos o roles del sistema.
+
+09_9_asignacion_de_permisos_grupo.png
+9. Asignación de Permisos (Grupo)
+Permite definir las acciones y accesos que tendrá cada grupo dentro del sistema.
+
+10_10_gestion_de_clientes_listado.png
+10. Gestión de Clientes (Listado)
+Permite listar, buscar y administrar clientes registrados para la operatoria comercial.
+
+11_11_formulario_cliente.png
+11. Formulario Cliente
+Permite dar de alta o modificar los datos de un cliente.
+
+12_12_gestion_de_proveedores_listado.png
+12. Gestión de Proveedores (Listado)
+Permite listar, buscar y administrar proveedores vinculados a la gestión de compras.
+
+13_13_formulario_proveedor.png
+13. Formulario Proveedor
+Permite registrar o modificar los datos de un proveedor.
+
+14_14_gestion_de_productos_listado.png
+14. Gestión de Productos (Listado)
+Permite listar, buscar y administrar productos disponibles en el sistema.
+
+15_15_formulario_producto.png
+15. Formulario Producto
+Permite registrar o modificar la información de un producto, incluyendo categoría, precio y stock.
+
+16_16_gestion_de_rubros_categorias.png
+16. Gestión de Rubros/Categorías
+Permite clasificar los productos por rubro o categoría para facilitar su organización y consulta.
+
+17_17_consulta_de_stock.png
+17. Consulta de Stock
+Permite visualizar el stock actual, el stock mínimo y el estado de disponibilidad de los productos.
+
+18_18_registro_de_compra.png
+18. Registro de Compra
+Permite registrar compras indicando proveedor, productos, cantidades e importes.
+
+19_19_confirmacion_compra_impacto_en_stock.png
+19. Confirmación Compra (Impacto en Stock)
+Informa que la compra fue registrada correctamente y que el stock de los productos fue actualizado.
+
+20_20_registro_de_venta.png
+20. Registro de Venta
+Permite registrar ventas indicando cliente, productos, cantidades e importe total de la operación.
+
+21_21_validacion_de_stock_insuficiente.png
+21. Validación de Stock Insuficiente
+Impide confirmar una venta cuando no existe stock suficiente para alguno de los productos seleccionados.
+
+22_22_venta_registrada_actualizacion_de_stock.png
+22. Venta Registrada (Actualización de Stock)
+Informa que la venta fue registrada correctamente y que el stock fue descontado.
+
+23_23_cuentas_corrientes_listado.png
+23. Cuentas Corrientes (Listado)
+Permite consultar saldos, débitos, créditos y estado de cuenta de los clientes.
+
+24_24_registro_de_pago.png
+24. Registro de Pago
+Permite imputar pagos realizados por los clientes y actualizar el saldo adeudado.
+
+25_25_reporte_de_ventas.png
+25. Reporte de Ventas
+Permite emitir reportes de ventas por período para el análisis comercial.
+
+26_26_reporte_de_stock.png
+26. Reporte de Stock
+Permite emitir reportes sobre stock disponible, stock mínimo y estado de los productos.
+
+27_27_dashboard_indicadores.png
+27. Dashboard / Indicadores
+Muestra métricas, gráficos e indicadores resumidos para apoyar la toma de decisiones.
+
+28_28_auditoria_historial.png
+28. Auditoría / Historial
+Permite consultar el historial de acciones críticas realizadas por los usuarios del sistema.
+

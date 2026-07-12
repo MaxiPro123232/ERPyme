@@ -1,0 +1,14 @@
+# Compilados de .NET
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Node (si se usara)
+node_modules/
+
+# Archivos temporales de Office
+~$*
