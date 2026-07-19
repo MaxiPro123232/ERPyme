@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
@@ -102,29 +102,48 @@ public partial class DashboardView : UserControl
 
         int margenInf = 26, margenSup = 22;
         int anchoCol = area.Width / _dias.Count;
-        int anchoBarra = Math.Max(anchoCol - 24, 12);
+        int anchoBarra = Math.Min(Math.Max(anchoCol - 26, 12), 44);
         int altoUtil = area.Height - margenInf - margenSup;
 
         using var fEtiqueta = new Font("Segoe UI", 8f);
-        using var fMonto = new Font("Segoe UI", 7.75f);
-        using var brochaBarra = new SolidBrush(Paleta.Acento);
+        using var fMonto = new Font("Segoe UI Semibold", 7.75f);
         using var brochaEtiqueta = new SolidBrush(Paleta.TextoSuave);
         using var formato = new StringFormat { Alignment = StringAlignment.Center };
+
+        // líneas de guía horizontales sutiles
+        using (var lapizGuia = new Pen(Color.FromArgb(243, 244, 246)))
+        {
+            for (int linea = 1; linea <= 3; linea++)
+            {
+                int yGuia = area.Bottom - margenInf - altoUtil * linea / 3;
+                g.DrawLine(lapizGuia, area.X, yGuia, area.Right, yGuia);
+            }
+        }
+        using (var lapizBase = new Pen(Paleta.Borde))
+            g.DrawLine(lapizBase, area.X, area.Bottom - margenInf, area.Right, area.Bottom - margenInf);
 
         for (int i = 0; i < _dias.Count; i++)
         {
             var d = _dias[i];
             int alto = (int)(altoUtil * (double)(d.Monto / max));
-            if (alto < 2) alto = 2;
+            if (alto < 3) alto = 3;
             int x = area.X + i * anchoCol + (anchoCol - anchoBarra) / 2;
             int y = area.Bottom - margenInf - alto;
 
-            g.FillRectangle(brochaBarra, x, y, anchoBarra, alto);
+            // barra con la parte superior redondeada
+            int radio = Math.Min(6, alto / 2);
+            using var camino = new System.Drawing.Drawing2D.GraphicsPath();
+            camino.AddArc(x, y, radio * 2, radio * 2, 180, 90);
+            camino.AddArc(x + anchoBarra - radio * 2, y, radio * 2, radio * 2, 270, 90);
+            camino.AddLine(x + anchoBarra, area.Bottom - margenInf, x, area.Bottom - margenInf);
+            camino.CloseFigure();
+            using var brochaBarra = new SolidBrush(d.Monto > 0 ? Paleta.Acento : Paleta.Borde);
+            g.FillPath(brochaBarra, camino);
 
             var centro = area.X + i * anchoCol + anchoCol / 2f;
             if (d.Monto > 0)
-                g.DrawString($"$ {d.Monto / 1000:N0}k", fMonto, brochaEtiqueta, centro, y - 16, formato);
-            g.DrawString(d.Etiqueta, fEtiqueta, brochaEtiqueta, centro, area.Bottom - margenInf + 6, formato);
+                g.DrawString($"$ {d.Monto / 1000:N0}k", fMonto, brochaEtiqueta, centro, y - 17, formato);
+            g.DrawString(d.Etiqueta, fEtiqueta, brochaEtiqueta, centro, area.Bottom - margenInf + 7, formato);
         }
     }
 }

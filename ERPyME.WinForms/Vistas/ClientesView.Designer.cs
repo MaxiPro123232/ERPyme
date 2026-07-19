@@ -1,4 +1,4 @@
-namespace ERPyME.WinForms.Vistas;
+﻿namespace ERPyME.WinForms.Vistas;
 
 partial class ClientesView
 {
@@ -126,7 +126,7 @@ partial class ClientesView
         //
         // panelBarra
         //
-        panelBarra.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        panelBarra.BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         panelBarra.Controls.Add(lblTitulo);
         panelBarra.Controls.Add(lblSubtitulo);
         panelBarra.Controls.Add(btnNuevo);
@@ -141,7 +141,7 @@ partial class ClientesView
         //
         lblTitulo.AutoSize = true;
         lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblTitulo.Location = new System.Drawing.Point(0, 0);
         lblTitulo.Name = "lblTitulo";
         lblTitulo.Text = "Gestión de Clientes";
@@ -150,7 +150,7 @@ partial class ClientesView
         //
         lblSubtitulo.AutoSize = true;
         lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-        lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblSubtitulo.Location = new System.Drawing.Point(2, 32);
         lblSubtitulo.Name = "lblSubtitulo";
         lblSubtitulo.Text = "Listado, búsqueda y administración de clientes (RF10 / RF11)";
@@ -178,7 +178,7 @@ partial class ClientesView
         //
         // ClientesView
         //
-        BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         Controls.Add(cardGrilla);
         Controls.Add(panelBarra);
         Name = "ClientesView";

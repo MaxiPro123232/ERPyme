@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -40,7 +40,7 @@ public partial class LoginForm : Form
         e.Graphics.DrawString("🏢", new Font("Segoe UI Emoji", 34f), Brushes.White, 40, 110);
         e.Graphics.DrawString("MiEmpresa ERP", fTitulo, Brushes.White, 36, 180);
         e.Graphics.DrawString("Sistema Integral de Gestión Empresarial\npara PyMEs Comerciales",
-            fSub, new SolidBrush(Color.FromArgb(184, 196, 212)), 40, 232);
+            fSub, new SolidBrush(Color.FromArgb(152, 162, 179)), 40, 232);
 
         var items = new[]
         {
@@ -49,7 +49,7 @@ public partial class LoginForm : Form
             "✓  Reportes e indicadores del negocio",
             "✓  Auditoría y trazabilidad de operaciones"
         };
-        using var brochaItem = new SolidBrush(Color.FromArgb(147, 197, 253));
+        using var brochaItem = new SolidBrush(Color.FromArgb(165, 180, 252));
         for (int i = 0; i < items.Length; i++)
             e.Graphics.DrawString(items[i], fItem, brochaItem, 40, 310 + i * 30);
     }

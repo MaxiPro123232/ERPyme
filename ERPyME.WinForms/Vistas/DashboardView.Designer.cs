@@ -1,4 +1,4 @@
-namespace ERPyME.WinForms.Vistas;
+﻿namespace ERPyME.WinForms.Vistas;
 
 partial class DashboardView
 {
@@ -68,7 +68,7 @@ partial class DashboardView
         //
         lblTitulo.AutoSize = true;
         lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblTitulo.Location = new System.Drawing.Point(26, 20);
         lblTitulo.Name = "lblTitulo";
         lblTitulo.Text = "Dashboard";
@@ -77,7 +77,7 @@ partial class DashboardView
         //
         lblFecha.AutoSize = true;
         lblFecha.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-        lblFecha.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblFecha.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblFecha.Location = new System.Drawing.Point(28, 54);
         lblFecha.Name = "lblFecha";
         lblFecha.Text = "Resumen del negocio";
@@ -85,7 +85,7 @@ partial class DashboardView
         // tlpTarjetas
         //
         tlpTarjetas.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-        tlpTarjetas.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        tlpTarjetas.BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         tlpTarjetas.ColumnCount = 4;
         tlpTarjetas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
         tlpTarjetas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -117,7 +117,7 @@ partial class DashboardView
         //
         lblVentasMesDetalle.Dock = System.Windows.Forms.DockStyle.Top;
         lblVentasMesDetalle.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-        lblVentasMesDetalle.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblVentasMesDetalle.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblVentasMesDetalle.Name = "lblVentasMesDetalle";
         lblVentasMesDetalle.Size = new System.Drawing.Size(200, 20);
         lblVentasMesDetalle.Text = "operaciones este mes";
@@ -126,7 +126,7 @@ partial class DashboardView
         //
         lblVentasMesValor.Dock = System.Windows.Forms.DockStyle.Top;
         lblVentasMesValor.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-        lblVentasMesValor.ForeColor = System.Drawing.Color.FromArgb(22, 163, 74);
+        lblVentasMesValor.ForeColor = System.Drawing.Color.FromArgb(5, 150, 105);
         lblVentasMesValor.Name = "lblVentasMesValor";
         lblVentasMesValor.Size = new System.Drawing.Size(200, 40);
         lblVentasMesValor.Text = "$ 0";
@@ -135,7 +135,7 @@ partial class DashboardView
         //
         lblVentasMesTitulo.Dock = System.Windows.Forms.DockStyle.Top;
         lblVentasMesTitulo.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-        lblVentasMesTitulo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblVentasMesTitulo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblVentasMesTitulo.Name = "lblVentasMesTitulo";
         lblVentasMesTitulo.Size = new System.Drawing.Size(200, 20);
         lblVentasMesTitulo.Text = "VENTAS DEL MES";
@@ -155,7 +155,7 @@ partial class DashboardView
         //
         lblVentasHoyDetalle.Dock = System.Windows.Forms.DockStyle.Top;
         lblVentasHoyDetalle.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-        lblVentasHoyDetalle.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblVentasHoyDetalle.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblVentasHoyDetalle.Name = "lblVentasHoyDetalle";
         lblVentasHoyDetalle.Size = new System.Drawing.Size(200, 20);
         lblVentasHoyDetalle.Text = "operaciones hoy";
@@ -164,7 +164,7 @@ partial class DashboardView
         //
         lblVentasHoyValor.Dock = System.Windows.Forms.DockStyle.Top;
         lblVentasHoyValor.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-        lblVentasHoyValor.ForeColor = System.Drawing.Color.FromArgb(37, 99, 235);
+        lblVentasHoyValor.ForeColor = System.Drawing.Color.FromArgb(79, 70, 229);
         lblVentasHoyValor.Name = "lblVentasHoyValor";
         lblVentasHoyValor.Size = new System.Drawing.Size(200, 40);
         lblVentasHoyValor.Text = "$ 0";
@@ -173,7 +173,7 @@ partial class DashboardView
         //
         lblVentasHoyTitulo.Dock = System.Windows.Forms.DockStyle.Top;
         lblVentasHoyTitulo.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-        lblVentasHoyTitulo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblVentasHoyTitulo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblVentasHoyTitulo.Name = "lblVentasHoyTitulo";
         lblVentasHoyTitulo.Size = new System.Drawing.Size(200, 20);
         lblVentasHoyTitulo.Text = "VENTAS DE HOY";
@@ -193,7 +193,7 @@ partial class DashboardView
         //
         lblClientesDetalle.Dock = System.Windows.Forms.DockStyle.Top;
         lblClientesDetalle.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-        lblClientesDetalle.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblClientesDetalle.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblClientesDetalle.Name = "lblClientesDetalle";
         lblClientesDetalle.Size = new System.Drawing.Size(200, 20);
         lblClientesDetalle.Text = "registrados en el sistema";
@@ -202,7 +202,7 @@ partial class DashboardView
         //
         lblClientesValor.Dock = System.Windows.Forms.DockStyle.Top;
         lblClientesValor.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-        lblClientesValor.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblClientesValor.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblClientesValor.Name = "lblClientesValor";
         lblClientesValor.Size = new System.Drawing.Size(200, 40);
         lblClientesValor.Text = "0";
@@ -211,7 +211,7 @@ partial class DashboardView
         //
         lblClientesTitulo.Dock = System.Windows.Forms.DockStyle.Top;
         lblClientesTitulo.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-        lblClientesTitulo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblClientesTitulo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblClientesTitulo.Name = "lblClientesTitulo";
         lblClientesTitulo.Size = new System.Drawing.Size(200, 20);
         lblClientesTitulo.Text = "CLIENTES ACTIVOS";
@@ -231,7 +231,7 @@ partial class DashboardView
         //
         lblStockBajoDetalle.Dock = System.Windows.Forms.DockStyle.Top;
         lblStockBajoDetalle.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-        lblStockBajoDetalle.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblStockBajoDetalle.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblStockBajoDetalle.Name = "lblStockBajoDetalle";
         lblStockBajoDetalle.Size = new System.Drawing.Size(200, 20);
         lblStockBajoDetalle.Text = "productos requieren reposición";
@@ -240,7 +240,7 @@ partial class DashboardView
         //
         lblStockBajoValor.Dock = System.Windows.Forms.DockStyle.Top;
         lblStockBajoValor.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-        lblStockBajoValor.ForeColor = System.Drawing.Color.FromArgb(220, 38, 38);
+        lblStockBajoValor.ForeColor = System.Drawing.Color.FromArgb(225, 29, 72);
         lblStockBajoValor.Name = "lblStockBajoValor";
         lblStockBajoValor.Size = new System.Drawing.Size(200, 40);
         lblStockBajoValor.Text = "0";
@@ -249,7 +249,7 @@ partial class DashboardView
         //
         lblStockBajoTitulo.Dock = System.Windows.Forms.DockStyle.Top;
         lblStockBajoTitulo.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-        lblStockBajoTitulo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblStockBajoTitulo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblStockBajoTitulo.Name = "lblStockBajoTitulo";
         lblStockBajoTitulo.Size = new System.Drawing.Size(200, 20);
         lblStockBajoTitulo.Text = "STOCK BAJO";
@@ -257,7 +257,7 @@ partial class DashboardView
         // tlpMedio
         //
         tlpMedio.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-        tlpMedio.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        tlpMedio.BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         tlpMedio.ColumnCount = 2;
         tlpMedio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64F));
         tlpMedio.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36F));
@@ -290,7 +290,7 @@ partial class DashboardView
         //
         lblGraficoTitulo.Dock = System.Windows.Forms.DockStyle.Top;
         lblGraficoTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-        lblGraficoTitulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblGraficoTitulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblGraficoTitulo.Name = "lblGraficoTitulo";
         lblGraficoTitulo.Size = new System.Drawing.Size(200, 30);
         lblGraficoTitulo.Text = "Ventas por Día (Últimos 7 días)";
@@ -318,7 +318,7 @@ partial class DashboardView
         //
         lblStockListaTitulo.Dock = System.Windows.Forms.DockStyle.Top;
         lblStockListaTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-        lblStockListaTitulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblStockListaTitulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblStockListaTitulo.Name = "lblStockListaTitulo";
         lblStockListaTitulo.Size = new System.Drawing.Size(200, 30);
         lblStockListaTitulo.Text = "⚠ Productos con Stock Bajo";
@@ -383,7 +383,7 @@ partial class DashboardView
         //
         lblSinVentas.Dock = System.Windows.Forms.DockStyle.Fill;
         lblSinVentas.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-        lblSinVentas.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblSinVentas.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblSinVentas.Name = "lblSinVentas";
         lblSinVentas.Text = "Todavía no se registraron ventas. Usá el módulo «Registrar Venta» para cargar la primera.";
         lblSinVentas.Visible = false;
@@ -392,7 +392,7 @@ partial class DashboardView
         //
         lblUltimasTitulo.Dock = System.Windows.Forms.DockStyle.Top;
         lblUltimasTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-        lblUltimasTitulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblUltimasTitulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblUltimasTitulo.Name = "lblUltimasTitulo";
         lblUltimasTitulo.Size = new System.Drawing.Size(200, 30);
         lblUltimasTitulo.Text = "Últimas Ventas";
@@ -400,7 +400,7 @@ partial class DashboardView
         // DashboardView
         //
         AutoScroll = true;
-        BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         Controls.Add(lblTitulo);
         Controls.Add(lblFecha);
         Controls.Add(tlpTarjetas);

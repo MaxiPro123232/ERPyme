@@ -1,4 +1,4 @@
-namespace ERPyME.WinForms.Vistas;
+﻿namespace ERPyME.WinForms.Vistas;
 
 partial class MainForm
 {
@@ -29,6 +29,8 @@ partial class MainForm
         btnNavCompras = new System.Windows.Forms.Button();
         btnNavProveedores = new System.Windows.Forms.Button();
         btnNavClientes = new System.Windows.Forms.Button();
+        btnNavStock = new System.Windows.Forms.Button();
+        btnNavRubros = new System.Windows.Forms.Button();
         btnNavProductos = new System.Windows.Forms.Button();
         lblSecGestion = new System.Windows.Forms.Label();
         btnNavVenta = new System.Windows.Forms.Button();
@@ -46,7 +48,7 @@ partial class MainForm
         //
         // panelContenido
         //
-        panelContenido.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        panelContenido.BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
         panelContenido.Location = new System.Drawing.Point(235, 0);
         panelContenido.Name = "panelContenido";
@@ -55,7 +57,7 @@ partial class MainForm
         //
         // panelSidebar
         //
-        panelSidebar.BackColor = System.Drawing.Color.FromArgb(27, 42, 65);
+        panelSidebar.BackColor = System.Drawing.Color.FromArgb(16, 24, 40);
         panelSidebar.Controls.Add(panelNav);
         panelSidebar.Controls.Add(panelPie);
         panelSidebar.Controls.Add(panelLogo);
@@ -68,7 +70,7 @@ partial class MainForm
         // panelNav
         //
         panelNav.AutoScroll = true;
-        panelNav.BackColor = System.Drawing.Color.FromArgb(27, 42, 65);
+        panelNav.BackColor = System.Drawing.Color.FromArgb(16, 24, 40);
         panelNav.Controls.Add(btnNavUsuarios);
         panelNav.Controls.Add(lblSecAdministracion);
         panelNav.Controls.Add(btnNavAuditoria);
@@ -78,6 +80,8 @@ partial class MainForm
         panelNav.Controls.Add(btnNavCompras);
         panelNav.Controls.Add(btnNavProveedores);
         panelNav.Controls.Add(btnNavClientes);
+        panelNav.Controls.Add(btnNavStock);
+        panelNav.Controls.Add(btnNavRubros);
         panelNav.Controls.Add(btnNavProductos);
         panelNav.Controls.Add(lblSecGestion);
         panelNav.Controls.Add(btnNavVenta);
@@ -93,7 +97,7 @@ partial class MainForm
         //
         lblSecPrincipal.Dock = System.Windows.Forms.DockStyle.Top;
         lblSecPrincipal.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-        lblSecPrincipal.ForeColor = System.Drawing.Color.FromArgb(93, 112, 140);
+        lblSecPrincipal.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblSecPrincipal.Name = "lblSecPrincipal";
         lblSecPrincipal.Padding = new System.Windows.Forms.Padding(20, 12, 0, 0);
         lblSecPrincipal.Size = new System.Drawing.Size(235, 30);
@@ -123,7 +127,7 @@ partial class MainForm
         //
         lblSecGestion.Dock = System.Windows.Forms.DockStyle.Top;
         lblSecGestion.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-        lblSecGestion.ForeColor = System.Drawing.Color.FromArgb(93, 112, 140);
+        lblSecGestion.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblSecGestion.Name = "lblSecGestion";
         lblSecGestion.Padding = new System.Windows.Forms.Padding(20, 12, 0, 0);
         lblSecGestion.Size = new System.Drawing.Size(235, 30);
@@ -138,6 +142,26 @@ partial class MainForm
         btnNavProductos.Tag = "productos";
         btnNavProductos.Text = "   📦  Productos";
         btnNavProductos.Click += NavBoton_Click;
+        //
+        // btnNavRubros
+        //
+        btnNavRubros.Dock = System.Windows.Forms.DockStyle.Top;
+        btnNavRubros.Name = "btnNavRubros";
+        btnNavRubros.Size = new System.Drawing.Size(235, 42);
+        btnNavRubros.TabIndex = 10;
+        btnNavRubros.Tag = "rubros";
+        btnNavRubros.Text = "   🏷️  Rubros";
+        btnNavRubros.Click += NavBoton_Click;
+        //
+        // btnNavStock
+        //
+        btnNavStock.Dock = System.Windows.Forms.DockStyle.Top;
+        btnNavStock.Name = "btnNavStock";
+        btnNavStock.Size = new System.Drawing.Size(235, 42);
+        btnNavStock.TabIndex = 11;
+        btnNavStock.Tag = "stock";
+        btnNavStock.Text = "   📋  Consulta de Stock";
+        btnNavStock.Click += NavBoton_Click;
         //
         // btnNavClientes
         //
@@ -183,7 +207,7 @@ partial class MainForm
         //
         lblSecAnalisis.Dock = System.Windows.Forms.DockStyle.Top;
         lblSecAnalisis.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-        lblSecAnalisis.ForeColor = System.Drawing.Color.FromArgb(93, 112, 140);
+        lblSecAnalisis.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblSecAnalisis.Name = "lblSecAnalisis";
         lblSecAnalisis.Padding = new System.Windows.Forms.Padding(20, 12, 0, 0);
         lblSecAnalisis.Size = new System.Drawing.Size(235, 30);
@@ -213,7 +237,7 @@ partial class MainForm
         //
         lblSecAdministracion.Dock = System.Windows.Forms.DockStyle.Top;
         lblSecAdministracion.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold);
-        lblSecAdministracion.ForeColor = System.Drawing.Color.FromArgb(93, 112, 140);
+        lblSecAdministracion.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblSecAdministracion.Name = "lblSecAdministracion";
         lblSecAdministracion.Padding = new System.Windows.Forms.Padding(20, 12, 0, 0);
         lblSecAdministracion.Size = new System.Drawing.Size(235, 30);
@@ -231,7 +255,7 @@ partial class MainForm
         //
         // panelLogo
         //
-        panelLogo.BackColor = System.Drawing.Color.FromArgb(27, 42, 65);
+        panelLogo.BackColor = System.Drawing.Color.FromArgb(16, 24, 40);
         panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
         panelLogo.Location = new System.Drawing.Point(0, 0);
         panelLogo.Name = "panelLogo";
@@ -240,7 +264,7 @@ partial class MainForm
         //
         // panelPie
         //
-        panelPie.BackColor = System.Drawing.Color.FromArgb(27, 42, 65);
+        panelPie.BackColor = System.Drawing.Color.FromArgb(16, 24, 40);
         panelPie.Controls.Add(btnCerrarSesion);
         panelPie.Controls.Add(lblGrupo);
         panelPie.Controls.Add(lblUsuario);
@@ -264,7 +288,7 @@ partial class MainForm
         //
         lblGrupo.Dock = System.Windows.Forms.DockStyle.Top;
         lblGrupo.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-        lblGrupo.ForeColor = System.Drawing.Color.FromArgb(124, 141, 166);
+        lblGrupo.ForeColor = System.Drawing.Color.FromArgb(152, 162, 179);
         lblGrupo.Name = "lblGrupo";
         lblGrupo.Size = new System.Drawing.Size(203, 20);
         lblGrupo.Text = "Grupo";
@@ -280,7 +304,7 @@ partial class MainForm
         //
         // MainForm
         //
-        BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         ClientSize = new System.Drawing.Size(1264, 721);
         Controls.Add(panelContenido);
         Controls.Add(panelSidebar);
@@ -306,6 +330,8 @@ partial class MainForm
     private System.Windows.Forms.Button btnNavVenta;
     private System.Windows.Forms.Label lblSecGestion;
     private System.Windows.Forms.Button btnNavProductos;
+    private System.Windows.Forms.Button btnNavRubros;
+    private System.Windows.Forms.Button btnNavStock;
     private System.Windows.Forms.Button btnNavClientes;
     private System.Windows.Forms.Button btnNavProveedores;
     private System.Windows.Forms.Button btnNavCompras;

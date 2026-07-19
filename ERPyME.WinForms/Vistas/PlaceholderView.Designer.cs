@@ -1,4 +1,4 @@
-namespace ERPyME.WinForms.Vistas;
+﻿namespace ERPyME.WinForms.Vistas;
 
 partial class PlaceholderView
 {
@@ -49,7 +49,7 @@ partial class PlaceholderView
         // lblModulo
         //
         lblModulo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-        lblModulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblModulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblModulo.Location = new System.Drawing.Point(20, 96);
         lblModulo.Name = "lblModulo";
         lblModulo.Size = new System.Drawing.Size(440, 32);
@@ -59,7 +59,7 @@ partial class PlaceholderView
         // lblEstado
         //
         lblEstado.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-        lblEstado.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblEstado.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblEstado.Location = new System.Drawing.Point(20, 130);
         lblEstado.Name = "lblEstado";
         lblEstado.Size = new System.Drawing.Size(440, 24);
@@ -68,9 +68,9 @@ partial class PlaceholderView
         //
         // lblRequerimiento
         //
-        lblRequerimiento.BackColor = System.Drawing.Color.FromArgb(239, 246, 255);
+        lblRequerimiento.BackColor = System.Drawing.Color.FromArgb(238, 242, 255);
         lblRequerimiento.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-        lblRequerimiento.ForeColor = System.Drawing.Color.FromArgb(37, 99, 235);
+        lblRequerimiento.ForeColor = System.Drawing.Color.FromArgb(79, 70, 229);
         lblRequerimiento.Location = new System.Drawing.Point(70, 170);
         lblRequerimiento.Name = "lblRequerimiento";
         lblRequerimiento.Size = new System.Drawing.Size(340, 30);
@@ -79,7 +79,7 @@ partial class PlaceholderView
         //
         // PlaceholderView
         //
-        BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         Controls.Add(cardCentro);
         Name = "PlaceholderView";
         Size = new System.Drawing.Size(1030, 720);

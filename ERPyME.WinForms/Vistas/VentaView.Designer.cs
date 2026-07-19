@@ -1,4 +1,4 @@
-namespace ERPyME.WinForms.Vistas;
+﻿namespace ERPyME.WinForms.Vistas;
 
 partial class VentaView
 {
@@ -147,7 +147,7 @@ partial class VentaView
         //
         lblProducto.AutoSize = true;
         lblProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblProducto.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblProducto.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblProducto.Location = new System.Drawing.Point(0, 2);
         lblProducto.Name = "lblProducto";
         lblProducto.Text = "Producto";
@@ -167,7 +167,7 @@ partial class VentaView
         //
         lblCantidad.AutoSize = true;
         lblCantidad.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblCantidad.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblCantidad.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblCantidad.Location = new System.Drawing.Point(396, 2);
         lblCantidad.Name = "lblCantidad";
         lblCantidad.Text = "Cantidad";
@@ -196,7 +196,7 @@ partial class VentaView
         //
         lblStockInfo.AutoSize = true;
         lblStockInfo.Font = new System.Drawing.Font("Segoe UI", 8.5F);
-        lblStockInfo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblStockInfo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblStockInfo.Location = new System.Drawing.Point(0, 58);
         lblStockInfo.Name = "lblStockInfo";
         //
@@ -204,7 +204,7 @@ partial class VentaView
         //
         lblProductos.Dock = System.Windows.Forms.DockStyle.Top;
         lblProductos.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-        lblProductos.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblProductos.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblProductos.Location = new System.Drawing.Point(20, 14);
         lblProductos.Name = "lblProductos";
         lblProductos.Size = new System.Drawing.Size(938, 28);
@@ -226,7 +226,7 @@ partial class VentaView
         //
         lblTotal.AutoSize = true;
         lblTotal.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-        lblTotal.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblTotal.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblTotal.Location = new System.Drawing.Point(880, 10);
         lblTotal.Name = "lblTotal";
         lblTotal.Text = "$ 0";
@@ -236,7 +236,7 @@ partial class VentaView
         //
         lblTotalTexto.AutoSize = true;
         lblTotalTexto.Font = new System.Drawing.Font("Segoe UI", 11F);
-        lblTotalTexto.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblTotalTexto.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblTotalTexto.Location = new System.Drawing.Point(820, 16);
         lblTotalTexto.Name = "lblTotalTexto";
         lblTotalTexto.Text = "Total:";
@@ -262,7 +262,7 @@ partial class VentaView
         //
         lblNuevaVenta.AutoSize = true;
         lblNuevaVenta.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F);
-        lblNuevaVenta.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblNuevaVenta.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblNuevaVenta.Location = new System.Drawing.Point(20, 12);
         lblNuevaVenta.Name = "lblNuevaVenta";
         lblNuevaVenta.Text = "Nueva Venta";
@@ -271,14 +271,14 @@ partial class VentaView
         //
         lblFecha.AutoSize = true;
         lblFecha.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblFecha.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblFecha.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblFecha.Location = new System.Drawing.Point(20, 42);
         lblFecha.Name = "lblFecha";
         lblFecha.Text = "Fecha";
         //
         // txtFecha
         //
-        txtFecha.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        txtFecha.BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         txtFecha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         txtFecha.Font = new System.Drawing.Font("Segoe UI", 10F);
         txtFecha.Location = new System.Drawing.Point(20, 62);
@@ -291,7 +291,7 @@ partial class VentaView
         //
         lblCliente.AutoSize = true;
         lblCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblCliente.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblCliente.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblCliente.Location = new System.Drawing.Point(170, 42);
         lblCliente.Name = "lblCliente";
         lblCliente.Text = "Cliente *";
@@ -310,7 +310,7 @@ partial class VentaView
         //
         lblFormaPago.AutoSize = true;
         lblFormaPago.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblFormaPago.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblFormaPago.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblFormaPago.Location = new System.Drawing.Point(550, 42);
         lblFormaPago.Name = "lblFormaPago";
         lblFormaPago.Text = "Forma de Pago *";
@@ -328,7 +328,7 @@ partial class VentaView
         //
         // panelBarra
         //
-        panelBarra.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        panelBarra.BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         panelBarra.Controls.Add(lblTitulo);
         panelBarra.Controls.Add(lblSubtitulo);
         panelBarra.Dock = System.Windows.Forms.DockStyle.Top;
@@ -341,7 +341,7 @@ partial class VentaView
         //
         lblTitulo.AutoSize = true;
         lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblTitulo.Location = new System.Drawing.Point(0, 0);
         lblTitulo.Name = "lblTitulo";
         lblTitulo.Text = "Registrar Venta";
@@ -350,14 +350,14 @@ partial class VentaView
         //
         lblSubtitulo.AutoSize = true;
         lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-        lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblSubtitulo.Location = new System.Drawing.Point(2, 32);
         lblSubtitulo.Name = "lblSubtitulo";
         lblSubtitulo.Text = "Requerimiento core RC01 · valida stock, actualiza inventario y cuenta corriente";
         //
         // panelBotones
         //
-        panelBotones.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        panelBotones.BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         panelBotones.Controls.Add(btnConfirmar);
         panelBotones.Controls.Add(btnCancelar);
         panelBotones.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -388,7 +388,7 @@ partial class VentaView
         //
         // VentaView
         //
-        BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         Controls.Add(cardProductos);
         Controls.Add(cardDatos);
         Controls.Add(panelBarra);

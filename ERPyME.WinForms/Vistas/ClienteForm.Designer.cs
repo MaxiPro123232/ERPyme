@@ -1,4 +1,4 @@
-namespace ERPyME.WinForms.Vistas;
+﻿namespace ERPyME.WinForms.Vistas;
 
 partial class ClienteForm
 {
@@ -40,7 +40,7 @@ partial class ClienteForm
         //
         lblTitulo.AutoSize = true;
         lblTitulo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblTitulo.Location = new System.Drawing.Point(26, 20);
         lblTitulo.Name = "lblTitulo";
         lblTitulo.Text = "Cliente";
@@ -49,14 +49,14 @@ partial class ClienteForm
         //
         lblCodigo.AutoSize = true;
         lblCodigo.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblCodigo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblCodigo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblCodigo.Location = new System.Drawing.Point(26, 64);
         lblCodigo.Name = "lblCodigo";
         lblCodigo.Text = "Código";
         //
         // txtCodigo
         //
-        txtCodigo.BackColor = System.Drawing.Color.FromArgb(241, 245, 249);
+        txtCodigo.BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
         txtCodigo.Font = new System.Drawing.Font("Segoe UI", 10F);
         txtCodigo.Location = new System.Drawing.Point(26, 84);
@@ -69,7 +69,7 @@ partial class ClienteForm
         //
         lblNombre.AutoSize = true;
         lblNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblNombre.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblNombre.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblNombre.Location = new System.Drawing.Point(26, 124);
         lblNombre.Name = "lblNombre";
         lblNombre.Text = "Nombre / Razón Social *";
@@ -87,7 +87,7 @@ partial class ClienteForm
         //
         lblCuit.AutoSize = true;
         lblCuit.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblCuit.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblCuit.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblCuit.Location = new System.Drawing.Point(26, 184);
         lblCuit.Name = "lblCuit";
         lblCuit.Text = "CUIT";
@@ -105,7 +105,7 @@ partial class ClienteForm
         //
         lblEmail.AutoSize = true;
         lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblEmail.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblEmail.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblEmail.Location = new System.Drawing.Point(26, 244);
         lblEmail.Name = "lblEmail";
         lblEmail.Text = "Email";
@@ -123,7 +123,7 @@ partial class ClienteForm
         //
         lblTelefono.AutoSize = true;
         lblTelefono.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblTelefono.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblTelefono.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblTelefono.Location = new System.Drawing.Point(26, 304);
         lblTelefono.Name = "lblTelefono";
         lblTelefono.Text = "Teléfono";
@@ -141,7 +141,7 @@ partial class ClienteForm
         //
         lblDireccion.AutoSize = true;
         lblDireccion.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblDireccion.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblDireccion.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblDireccion.Location = new System.Drawing.Point(26, 364);
         lblDireccion.Name = "lblDireccion";
         lblDireccion.Text = "Dirección";
@@ -168,7 +168,7 @@ partial class ClienteForm
         // lblError
         //
         lblError.Font = new System.Drawing.Font("Segoe UI", 8.75F);
-        lblError.ForeColor = System.Drawing.Color.FromArgb(220, 38, 38);
+        lblError.ForeColor = System.Drawing.Color.FromArgb(225, 29, 72);
         lblError.Location = new System.Drawing.Point(26, 454);
         lblError.Name = "lblError";
         lblError.Size = new System.Drawing.Size(365, 30);

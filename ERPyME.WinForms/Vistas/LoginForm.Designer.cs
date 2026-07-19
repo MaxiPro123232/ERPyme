@@ -1,4 +1,4 @@
-namespace ERPyME.WinForms.Vistas;
+﻿namespace ERPyME.WinForms.Vistas;
 
 partial class LoginForm
 {
@@ -68,7 +68,7 @@ partial class LoginForm
         //
         lblTitulo.AutoSize = true;
         lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(15, 23, 42);
+        lblTitulo.ForeColor = System.Drawing.Color.FromArgb(16, 24, 40);
         lblTitulo.Location = new System.Drawing.Point(30, 26);
         lblTitulo.Name = "lblTitulo";
         lblTitulo.Text = "Iniciar Sesión";
@@ -77,7 +77,7 @@ partial class LoginForm
         //
         lblSubtitulo.AutoSize = true;
         lblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-        lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblSubtitulo.Location = new System.Drawing.Point(30, 60);
         lblSubtitulo.Name = "lblSubtitulo";
         lblSubtitulo.Text = "Ingresá tus credenciales para acceder";
@@ -86,7 +86,7 @@ partial class LoginForm
         //
         lblUsuario.AutoSize = true;
         lblUsuario.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblUsuario.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblUsuario.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblUsuario.Location = new System.Drawing.Point(30, 100);
         lblUsuario.Name = "lblUsuario";
         lblUsuario.Text = "Usuario";
@@ -104,7 +104,7 @@ partial class LoginForm
         //
         lblClave.AutoSize = true;
         lblClave.Font = new System.Drawing.Font("Segoe UI Semibold", 8.75F);
-        lblClave.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+        lblClave.ForeColor = System.Drawing.Color.FromArgb(102, 112, 133);
         lblClave.Location = new System.Drawing.Point(30, 162);
         lblClave.Name = "lblClave";
         lblClave.Text = "Contraseña";
@@ -122,7 +122,7 @@ partial class LoginForm
         // lblError
         //
         lblError.Font = new System.Drawing.Font("Segoe UI", 8.75F);
-        lblError.ForeColor = System.Drawing.Color.FromArgb(220, 38, 38);
+        lblError.ForeColor = System.Drawing.Color.FromArgb(225, 29, 72);
         lblError.Location = new System.Drawing.Point(30, 220);
         lblError.Name = "lblError";
         lblError.Size = new System.Drawing.Size(280, 34);
@@ -141,7 +141,7 @@ partial class LoginForm
         //
         lblDemo.AutoSize = true;
         lblDemo.Font = new System.Drawing.Font("Segoe UI", 8F);
-        lblDemo.ForeColor = System.Drawing.Color.FromArgb(148, 163, 184);
+        lblDemo.ForeColor = System.Drawing.Color.FromArgb(152, 162, 179);
         lblDemo.Location = new System.Drawing.Point(30, 314);
         lblDemo.Name = "lblDemo";
         lblDemo.Text = "Demo: admin / admin  ·  vendedor / vendedor";
@@ -150,7 +150,7 @@ partial class LoginForm
         //
         lblCopyright.AutoSize = true;
         lblCopyright.Font = new System.Drawing.Font("Segoe UI", 8F);
-        lblCopyright.ForeColor = System.Drawing.Color.FromArgb(226, 232, 240);
+        lblCopyright.ForeColor = System.Drawing.Color.FromArgb(229, 231, 235);
         lblCopyright.Location = new System.Drawing.Point(30, 336);
         lblCopyright.Name = "lblCopyright";
         lblCopyright.Text = "© 2026 MiEmpresa ERP";
@@ -158,7 +158,7 @@ partial class LoginForm
         // LoginForm
         //
         AcceptButton = btnIngresar;
-        BackColor = System.Drawing.Color.FromArgb(248, 250, 252);
+        BackColor = System.Drawing.Color.FromArgb(248, 249, 252);
         ClientSize = new System.Drawing.Size(904, 521);
         Controls.Add(cardLogin);
         Controls.Add(panelIzquierdo);
