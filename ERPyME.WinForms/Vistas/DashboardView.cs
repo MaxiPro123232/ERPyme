@@ -13,6 +13,7 @@ namespace ERPyME.WinForms.Vistas;
 public partial class DashboardView : UserControl
 {
     private List<VentaDia> _dias = new();
+    private double _progresoGrafico = 1;
 
     public DashboardView()
     {
@@ -43,12 +44,17 @@ public partial class DashboardView : UserControl
         var datos = new ControladoraDashboard().Obtener();
         _dias = datos.VentasPorDia;
 
-        lblVentasMesValor.Text = $"$ {datos.VentasMesTotal:N0}";
         lblVentasMesDetalle.Text = $"{datos.VentasMesCantidad} operaciones este mes";
-        lblVentasHoyValor.Text = $"$ {datos.VentasHoyTotal:N0}";
         lblVentasHoyDetalle.Text = $"{datos.VentasHoyCantidad} operaciones hoy";
-        lblClientesValor.Text = datos.ClientesActivos.ToString();
-        lblStockBajoValor.Text = datos.ProductosBajoStock.Count.ToString();
+
+        // Los indicadores cuentan hasta su valor (decorativo: solo al abrir la vista)
+        Animaciones.Animar(500, p =>
+        {
+            lblVentasMesValor.Text = $"$ {datos.VentasMesTotal * (decimal)p:N0}";
+            lblVentasHoyValor.Text = $"$ {datos.VentasHoyTotal * (decimal)p:N0}";
+            lblClientesValor.Text = ((int)Math.Round(datos.ClientesActivos * p)).ToString();
+            lblStockBajoValor.Text = ((int)Math.Round(datos.ProductosBajoStock.Count * p)).ToString();
+        });
 
         // Lista de productos con stock bajo
         flowStock.Controls.Clear();
@@ -87,7 +93,9 @@ public partial class DashboardView : UserControl
         gridUltimas.Visible = hayVentas;
         lblSinVentas.Visible = !hayVentas;
 
-        panelGrafico.Invalidate();
+        // Las barras crecen con stagger al abrir la vista
+        _progresoGrafico = 0;
+        Animaciones.Animar(650, p => { _progresoGrafico = p; if (!panelGrafico.IsDisposed) panelGrafico.Invalidate(); });
     }
 
     private void PanelGrafico_Paint(object? sender, PaintEventArgs e)
@@ -125,7 +133,8 @@ public partial class DashboardView : UserControl
         for (int i = 0; i < _dias.Count; i++)
         {
             var d = _dias[i];
-            int alto = (int)(altoUtil * (double)(d.Monto / max));
+            double pBarra = Math.Clamp(_progresoGrafico * 1.8 - i * 0.08, 0, 1);
+            int alto = (int)(altoUtil * (double)(d.Monto / max) * pBarra);
             if (alto < 3) alto = 3;
             int x = area.X + i * anchoCol + (anchoCol - anchoBarra) / 2;
             int y = area.Bottom - margenInf - alto;
@@ -141,7 +150,7 @@ public partial class DashboardView : UserControl
             g.FillPath(brochaBarra, camino);
 
             var centro = area.X + i * anchoCol + anchoCol / 2f;
-            if (d.Monto > 0)
+            if (d.Monto > 0 && pBarra >= 1)
                 g.DrawString($"$ {d.Monto / 1000:N0}k", fMonto, brochaEtiqueta, centro, y - 17, formato);
             g.DrawString(d.Etiqueta, fEtiqueta, brochaEtiqueta, centro, area.Bottom - margenInf + 7, formato);
         }

@@ -17,6 +17,7 @@ public partial class LoginForm : Form
         InitializeComponent();
 
         Estilos.EstilizarBotonPrimario(btnIngresar);
+        Animaciones.AparecerVentana(this);
         Estilos.EstilizarCard(cardLogin);
         panelIzquierdo.Paint += PanelIzquierdo_Paint;
 

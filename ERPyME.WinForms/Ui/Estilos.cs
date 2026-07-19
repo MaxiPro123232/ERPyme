@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -217,6 +217,31 @@ public static class Estilos
         var e = Estado(nuevo, Paleta.Sidebar);
         e.Activo = true;
         nuevo.Invalidate();
+    }
+
+    // ================= combos =================
+
+    /// <summary>ComboBox visible sobre fondos blancos: fondo gris muy claro y borde propio
+    /// pintado sobre el contenedor (con foco, el borde pasa al color de acento).</summary>
+    public static void EstilizarCombo(ComboBox c)
+    {
+        c.FlatStyle = FlatStyle.Flat;
+        c.BackColor = Color.FromArgb(242, 244, 247);
+        c.ForeColor = Paleta.Texto;
+        var padre = c.Parent;
+        if (padre is null) return;
+
+        padre.Paint += (s, e) =>
+        {
+            var r = new Rectangle(c.Left - 1, c.Top - 1, c.Width + 1, c.Height + 1);
+            using var pen = new Pen(c.Focused ? Paleta.Acento : Color.FromArgb(203, 213, 225));
+            e.Graphics.DrawRectangle(pen, r);
+        };
+        void Repintar(object? s, EventArgs e) => padre.Invalidate();
+        c.GotFocus += Repintar;
+        c.LostFocus += Repintar;
+        c.LocationChanged += Repintar;
+        c.SizeChanged += Repintar;
     }
 
     // ================= tarjetas =================

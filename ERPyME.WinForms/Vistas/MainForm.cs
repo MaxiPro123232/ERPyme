@@ -25,6 +25,7 @@ public partial class MainForm : Form
                                   btnNavCuentas, btnNavReportes, btnNavAuditoria, btnNavUsuarios })
             Estilos.EstilizarBotonNav(b);
         Estilos.EstilizarBotonRojo(btnCerrarSesion);
+        Animaciones.AparecerVentana(this);
         panelLogo.Paint += PanelLogo_Paint;
 
         lblUsuario.Text = Sesion.UsuarioActual?.NombreCompleto ?? "";
@@ -71,12 +72,9 @@ public partial class MainForm : Form
             _ => new DashboardView()
         };
 
-        panelContenido.SuspendLayout();
         foreach (Control c in panelContenido.Controls) c.Dispose();
         panelContenido.Controls.Clear();
-        vista.Dock = DockStyle.Fill;
-        panelContenido.Controls.Add(vista);
-        panelContenido.ResumeLayout();
+        Animaciones.EntrarVista(vista, panelContenido); // entrada suave (180 ms, ease-out)
     }
 
     private void BtnCerrarSesion_Click(object? sender, EventArgs e)

@@ -18,6 +18,8 @@ public partial class ProductoForm : Form
 
         Estilos.EstilizarBotonPrimario(btnGuardar);
         Estilos.EstilizarBotonGris(btnCancelar);
+        Estilos.EstilizarCombo(cboRubro);
+        Animaciones.AparecerVentana(this, 140);
 
         Text = productoId is null ? "Nuevo Producto" : "Modificar Producto";
         lblTitulo.Text = Text;

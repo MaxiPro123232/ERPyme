@@ -41,6 +41,9 @@ public partial class VentaView : UserControl
         Estilos.EstilizarBotonVerde(btnConfirmar);
         Estilos.EstilizarBotonGris(btnCancelar);
         Estilos.EstilizarGrilla(gridItems);
+        Estilos.EstilizarCombo(cboCliente);
+        Estilos.EstilizarCombo(cboFormaPago);
+        Estilos.EstilizarCombo(cboProducto);
         colPrecioUnitario.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         colSubtotal.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         colBtnQuitar.DefaultCellStyle.ForeColor = Paleta.Rojo;

@@ -18,6 +18,7 @@ public partial class ClienteForm : Form
 
         Estilos.EstilizarBotonPrimario(btnGuardar);
         Estilos.EstilizarBotonGris(btnCancelar);
+        Animaciones.AparecerVentana(this, 140);
 
         Text = clienteId is null ? "Nuevo Cliente" : "Modificar Cliente";
         lblTitulo.Text = Text;
